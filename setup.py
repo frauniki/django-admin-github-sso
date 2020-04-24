@@ -5,13 +5,13 @@ from setuptools import setup
 import admin_sso
 
 setup(
-    name="django-admin-sso",
+    name="django-admin-github-sso",
     version=admin_sso.__version__,
     description="Django SSO solution",
     long_description=open(os.path.join(os.path.dirname(__file__), "README.rst")).read(),
     author="Marc Egli",
     author_email="egli@allink.ch",
-    url="http://github.com/matthiask/django-admin-sso/",
+    url="http://github.com/frauniki/django-admin-github-sso/",
     license="BSD License",
     platforms=["OS Independent"],
     packages=["admin_sso", "admin_sso.migrations"],
@@ -26,6 +26,6 @@ setup(
         "Programming Language :: Python",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     ],
-    install_requires=("Django>=1.11", "oauth2client>=1.2",),
+    install_requires=("Django>=1.11", "oauth2client>=1.2", "PyGithub",),
     include_package_data=True,
 )

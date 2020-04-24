@@ -35,3 +35,9 @@ DJANGO_ADMIN_SSO_REVOKE_URI = getattr(
     "DJANGO_ADMIN_SSO_REVOKE_URI",
     "https://accounts.google.com/o/oauth2/revoke",
 )
+DJANGO_ADMIN_SSO_BACKEND = getattr(
+    settings, "DJANGO_ADMIN_SSO_BACKEND", None
+)
+DJANGO_ADMIN_SSO_GITHUB_BASE_URL = getattr(
+    settings, "DJANGO_ADMIN_SSO_GITHUB_BASE_URL", "https://api.github.com"
+)
